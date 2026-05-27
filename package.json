@@ -1,0 +1,24 @@
+{
+  "name": "freesplitapp",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
+    "node": ">=22"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "scripts": {
+    "dev": "pnpm --filter @split/web dev",
+    "build": "pnpm --filter @split/web build",
+    "preview": "pnpm --filter @split/web preview",
+    "typecheck": "pnpm --filter @split/web exec tsc -b",
+    "test": "pnpm --filter @split/web test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freeappstore-online/split.git"
+  }
+}
